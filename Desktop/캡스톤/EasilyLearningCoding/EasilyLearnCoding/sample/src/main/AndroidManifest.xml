@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fridayof1995.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Easily Learn Coding"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".StackActivity"/>
+        <activity android:name=".HashActivity" />
+        <activity android:name=".WebView.WebView" />
+        <activity android:name=".WebView.Python" />
+        <activity android:name=".WebView.Java" />
+        <activity android:name=".WebView.C" />
+        <activity android:name=".WebView.Cpp" />
+        <activity android:name=".WebView.Csharp" />
+        <activity android:name=".WebView.hash1" />
+        <activity android:name=".WebView.hash2" />
+        <activity android:name=".WebView.hash3" />
+        <activity android:name=".WebView.hash4" />
+        <activity android:name=".WebView.stack4" />
+        <activity android:name=".WebView.stack3" />
+        <activity android:name=".WebView.stack1" />
+        <activity android:name=".WebView.stack2" />
+
+        <activity android:name=".qnaActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ManagerActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

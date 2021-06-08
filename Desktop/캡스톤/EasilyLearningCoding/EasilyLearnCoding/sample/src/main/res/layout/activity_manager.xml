@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="※관리자 전용 아이디입니다.\n     공지사항을 입력해주세요"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Notice_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Notice_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:hint="내용을 입력해주세요"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="horizontal"
+        android:scrollHorizontally="true"
+        app:layout_constraintEnd_toEndOf="@+id/Notice_title"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/Notice_title"
+        app:layout_constraintTop_toBottomOf="@+id/Notice_title"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Write"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="공지사항 게시"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/Notice_content"
+        app:layout_constraintStart_toStartOf="@+id/Notice_content"
+        app:layout_constraintTop_toBottomOf="@+id/Notice_content"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Pass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="게시판 이동"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Write"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Write"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Write" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

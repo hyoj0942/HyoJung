@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="101dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_programmer"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/programmer" />
+
+            <TextView
+                android:id="@+id/et_Easily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:text="EASILY"
+                android:textColor="#ffffff"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/et_LearnCoding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LEARN CODING"
+                android:textColor="#ffffff"
+                android:textSize="45dp"
+                android:layout_marginTop="-15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="   아이디"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="   비밀번호"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_id"
+            app:layout_constraintStart_toStartOf="@+id/et_id"
+            app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="로그인"
+            app:layout_constraintEnd_toEndOf="@+id/et_id"
+            app:layout_constraintStart_toStartOf="@+id/et_id"
+            app:layout_constraintTop_toBottomOf="@+id/et_id" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="회원가입"
+            app:layout_constraintEnd_toEndOf="@+id/et_id"
+            app:layout_constraintStart_toStartOf="@+id/et_id"
+            app:layout_constraintTop_toBottomOf="@+id/et_id" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
